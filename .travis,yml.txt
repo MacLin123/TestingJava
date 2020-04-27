@@ -1,0 +1,14 @@
+language: java
+
+os:linux
+dist:bionic
+
+jdk:openjdk11
+
+jobs:
+	include:
+		-stage: testing
+		script: mvn verify
+
+notifications:
+	email:false
