@@ -7,8 +7,9 @@ jdk:openjdk11
 
 jobs:
 	include:
-		-stage: testing
-		script: mvn verify
+    - stage: testing
+    script:
+      - mvn verify
 
 notifications:
 	email:false
